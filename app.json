@@ -1,5 +1,9 @@
 {
   "expo": {
+    "scheme": "your-app-scheme",
+  "experiments": {
+    "typedRoutes": true
+  },
     "name": "we_act",
     "slug": "we_act",
     "version": "1.0.0",
@@ -24,6 +28,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
