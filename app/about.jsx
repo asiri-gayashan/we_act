@@ -1,21 +1,20 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import Logo from "../assets/appstore.png";
 import { Link } from "expo-router";
 
-const Home = () => {
+const About = () => {
   return (
     <View style={styles.container}>
-      <Image source={Logo} style={styles.img} />
       <Text style={styles.title}>Page Title</Text>
       <Text style={{ marginTop: 15 }}>Content of the page</Text>
-      <Link href="./about" style ={styles.link}>About Page</Link>
-      <Link href="./contact" style ={styles.link}>Contact Page</Link>
+      <Link href="/" style={styles.link}>
+        Back to home
+      </Link>
     </View>
   );
 };
 
-export default Home;
+export default About;
 
 const styles = StyleSheet.create({
   container: {
@@ -28,12 +27,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "red",
   },
-  img: {
-    width: 100,
-    height: 100,
-    marginBottom: 20,
-  },
-   link: {
+  link: {
     textDecorationLine: "underline",
     color: "blue",
   },
