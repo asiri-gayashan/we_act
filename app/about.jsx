@@ -15,6 +15,10 @@ const About = () => {
 };
 export default About;
 
+
+
+// Styles
+
 const styles = StyleSheet.create({
   container: {
    
